@@ -10,5 +10,6 @@ window.APP_CONFIG = {
   trueLabel: "說法正確",
   falseLabel: "這是錯的",
   footer: "GHP 單元一 多人擂台　·　適合食品業教育訓練、稽核前複習。<br>掃 QR Code 即可加入，無需安裝任何 App。",
+  masterLabel: "GHP 達人",
   adminPass: "reset2026"
 };

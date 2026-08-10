@@ -293,7 +293,7 @@
     const champ = rank[0];
     $("resultCrown").textContent = "🏆";
     $("resultTitle").textContent = champ ? ("冠軍：" + champ.name) : "擂台結束";
-    if (meIdx === 0) $("resultSub").textContent = "恭喜你拿下全場第一！👑";
+    if (meIdx === 0) $("resultSub").textContent = "恭喜你拿下全場第一，" + (CFG.masterLabel || "達人") + "就是你！👑";
     else if (meIdx > 0) $("resultSub").textContent = "你是第 " + (meIdx + 1) + " 名（共 " + rank.length + " 人），再來一場吧！";
     else $("resultSub").textContent = "共 " + rank.length + " 人參戰。";
     $("finalLb").innerHTML = rank.map((r, i) =>
