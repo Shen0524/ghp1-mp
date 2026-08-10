@@ -219,7 +219,7 @@
     S.lastIndex = room.current; S.answered = false; show("quiz");
     const q = S.questions[room.current]; const total = S.questions.length;
     $("quizProgress").textContent = "第 " + (room.current + 1) + " / " + total + " 題";
-    $("quizCategory").textContent = q.category || "食安";
+    $("quizCategory").textContent = q.category || "題目";
     $("quizClaim").textContent = q.claim;
     ["choiceTrue", "choiceFalse"].forEach(id => { const el = $(id); el.disabled = false; el.classList.remove("selected", "correct", "wrong"); });
     $("quizFeedback").classList.add("hidden"); $("quizFeedback").innerHTML = "";
